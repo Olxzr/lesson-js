@@ -145,16 +145,14 @@ console.log(comparison)
 
 function sum(nam) {
 
-    let as = 0
+    let as = 0;
 
-    for(let i = 0; i < nam.length; i++)
-
-    as += nam[i]
-
-    console.log(as)
-};
-
-sum([1, 2, 3])
+    for(let i = 0; i < nam.length; i++) {
+        as += nam[i]
+    }
+    console.log(as);
+}
+sum([1, 2, 3]);
 
 
 
@@ -216,6 +214,30 @@ function suma(v) {
 
 suma('Adlan')
 
+// задание ТРЕТЬЕ
+
+function arr(num1, num2, operator) {
+    if (operator == '+') {
+    console.log(num1 + num2)
+    } 
+    else if(operator == '-'){
+    console.log(num1 - num2)
+    }
+    else if(operator == '*') {
+    console.log(num1 * num2)
+    }
+    
+}
+arr(5, 10, '+');
+
+// задание ЧЕТВЕРТОЕ
+
+let nb = [1,2,3,4,5,6,7,8,9]
+
+let car = nb.filter((number) => {
+return number > 6
+})
+console.log(car)
 
 
 
